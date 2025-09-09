@@ -1,0 +1,12 @@
+.darkmode {
+    --grey-color: 138, 143, 131;
+    --white-color: #fff;
+    --btn-primary-color: #E5E7EB;
+    --btn-primary-hover: #D1D5DB;
+    --btn-primary-text: #000;
+    --btn-secondary-color: #121212;
+    --btn-secondary-hover: #1a1a1a;
+    --btn-secondary-text: #fff;
+    --text-color: 255, 255, 255;
+    --bg-color: 0, 0, 0;
+}

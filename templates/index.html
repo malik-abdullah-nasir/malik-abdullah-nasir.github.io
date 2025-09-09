@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synthetic - Visualize your Synesthesia!</title>
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body class="">
+    <header>
+        <nav class="desktop-menu">
+            <p class="logo">Synthetic.</p>
+            <div class="links">
+                <a href="#demo">Demo</a>
+                <a href="#features">Features</a>
+                <a href="#faq">FAQs</a>
+            </div>
+            <a class="btn btn-primary" href="/visualizer">Visualize</a>
+            <i class="fa fa-bars menu-toggle"></i>
+        </nav>
+        <nav class="mobile-menu">
+            <div class="links">
+                <a href="#demo">Demo</a>
+                <a href="#features">Features</a>
+                <a href="#faq">FAQs</a>
+            </div>
+            <a class="btn btn-primary" href="/visualizer">Visualize</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="left">
+                <h1 class="hero-title">Synesthesia.</h1>
+                <h1 class="hero-title">Visualized.</h1>
+                <p class="hero-desc">Ever felt a song shimmer in color or a word sparkle in texture? Use the visualizer
+                    to explore how your senses can blend into art.</p>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-secondary">Try Demo</a>
+                    <a href="/visualizer" class="btn btn-primary">Visualize</a>
+                </div>
+            </div>
+            <div class="right">
+                <video src="/videos/synesthesia.mp4" class="hero-video" autoplay loop muted playsinline></video>
+            </div>
+        </section>
+        <section id="demo">
+            <div class="demo-container">
+                <h1 class="section-title">Demo</h1>
+                <div class="row">
+                    <div class="left">
+                        <div class="form">
+                            <select name="" id="synesthesia-type">
+                                <option value="null" selected disabled>Select a synesthesia type</option>
+                                <option value="time">Spatial Sequence</option>
+                                <option value="number">Number Form</option>
+                            </select>
+                            <select name="" id="spatial-pattern">
+                                <option value="null" selected disabled>Select a pattern</option>
+                                <option value="stack">Stack</option>
+                                <option value="oval">Oval</option>
+                            </select>
+                            <button type="button" class="btn btn-primary demo-visualize">Visualize</button>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="steps">
+                            <p class="step"><span id="number">1</span> Select a synesthesia pattern.</p>
+                            <p class="step"><span id="number">2</span> Choose a spatial pattern.</p>
+                            <p class="step"><span id="number">3</span> Click on Visualize.</p>
+                        </div>
+                        <div class="demo-display">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="features">
+            <h1 class="section-title">Features</h1>
+            <div class="features-container">
+                <div class="feature">
+                    <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px"
+                        fill="var(--text-color)">
+                        <path
+                            d="M480-60q-50 0-85-35t-35-85q0-39 22.5-70t57.5-43v-73q-11-4-21-9.5T401-389l-63 37q1 5 1.5 10.5t.5 11.5q0 50-35 85t-85 35q-50 0-85-35t-35-85q0-50 35-85t85-35q23 0 43 7.5t36 21.5l62-36q-1-5-1.5-11t-.5-12q0-6 .5-11.5T361-502l-62-37q-16 14-36 21.5t-43 7.5q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 6-.5 12t-1.5 11l63 36q8-8 18-13t21-9v-73q-35-12-57.5-43.5T360-780q0-50 35-85t85-35q50 0 85 35t35 85q0 39-22.5 70.5T520-666v73q11 4 20.5 9.5T558-570l64-38q-1-5-1.5-10.5T620-630q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-23 0-42.5-7.5T662-539l-65 38q1 5 1.5 10.5t.5 10.5q0 5-.5 11t-1.5 11l65 37q16-14 35.5-21.5T740-450q50 0 85 35t35 85q0 50-35 85t-85 35q-50 0-85-35t-35-85q0-6 .5-11.5T622-352l-64-37q-8 8-17.5 13t-20.5 9v74q35 12 57.5 43t22.5 70q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T520-180q0-17-11.5-28.5T480-220q-17 0-28.5 11.5T440-180q0 17 11.5 28.5T480-140ZM220-290q17 0 28.5-11.5T260-330q0-17-11.5-28.5T220-370q-17 0-28.5 11.5T180-330q0 17 11.5 28.5T220-290Zm520 0q17 0 28.5-11.5T780-330q0-17-11.5-28.5T740-370q-17 0-28.5 11.5T700-330q0 17 11.5 28.5T740-290ZM480-440q17 0 28.5-11.5T520-480q0-17-11.5-28.5T480-520q-17 0-28.5 11.5T440-480q0 17 11.5 28.5T480-440ZM220-590q17 0 28.5-11.5T260-630q0-17-11.5-28.5T220-670q-17 0-28.5 11.5T180-630q0 17 11.5 28.5T220-590Zm520 0q17 0 28.5-11.5T780-630q0-17-11.5-28.5T740-670q-17 0-28.5 11.5T700-630q0 17 11.5 28.5T740-590ZM480-740q17 0 28.5-11.5T520-780q0-17-11.5-28.5T480-820q-17 0-28.5 11.5T440-780q0 17 11.5 28.5T480-740Z" />
+                    </svg>
+                    <div class="feature-title">Personalized Spatial Patterns</div>
+                    <div class="feature-desc">Create or choose unique layouts — spirals, circles, or lines — to
+                        represent how you visualize time. Shape your own spatial map and make the calendar truly
+                        personal.
+                    </div>
+                </div>
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" viewBox="0 -960 960 960">
+                        <path
+                            d="M180-80q-24 0-42-18t-18-42v-620q0-24 18-42t42-18h65v-60h65v60h340v-60h65v60h65q24 0 42 18t18 42v620q0 24-18 42t-42 18H180Zm0-60h600v-430H180v430Zm0-490h600v-130H180v130Zm0 0v-130 130Zm300 230q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z" />
+                    </svg>
+                    <div class="feature-title">Calendar Visualization</div>
+                    <div class="feature-desc">See time come alive as days, weeks, and months are mapped onto your chosen
+                        spatial pattern. Instead of static grids, experience your calendar as a flowing, intuitive
+                        visualization.
+                    </div>
+                </div>
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" height="48px" viewBox="0 -960 960 960"
+                        width="48px" fill="#e3e3e3">
+                        <path
+                            d="M348-138 98-388q-9-9.12-13.5-20.06T80-430.7q0-11.7 4.5-22.5T98-473l250-250-114-114 43-43 406 407q9.47 9 13.74 19.8 4.26 10.8 4.26 22.5t-4.26 22.64Q692.47-397.12 683-388L433-138q-9 9-19.8 13.5t-22.5 4.5q-11.7 0-22.64-4.5Q357.12-129 348-138Zm43-542L141-430h500L391-680Zm408.66 560q-33.35 0-56.5-23.18Q720-166.36 720-200q0-26.28 10-49.64T756-293l44-57 44 57q15 20 25.5 43.36T880-200q0 33.64-23.5 56.82T799.66-120Z" />
+                    </svg>
+                    <div class="feature-title">Color & Shape Mapping</div>
+                    <div class="feature-desc">Customize how numbers, letters, or time units look. Assign colors and
+                        shapes for a personal synesthetic touch.
+                    </div>
+                </div>
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" height="48px" viewBox="0 -960 960 960"
+                        width="48px" fill="#e3e3e3">
+                        <path
+                            d="M109.91-240Q81-240 60.5-260.59 40-281.18 40-310.09t20.49-49.41q20.5-20.5 49.28-20.5 5.23 0 10.23.5t13 2.5l200-200q-2-8-2.5-13t-.5-10.23q0-28.78 20.59-49.28Q371.18-670 400.09-670t49.41 20.63q20.5 20.64 20.5 49.61 0 1.76-3 22.76l110 110q8-2 13-2.5t10-.5q5 0 10 .5t13 2.5l160-160q-2-8-2.5-13t-.5-10.23q0-28.78 20.59-49.28Q821.18-720 850.09-720t49.41 20.59q20.5 20.59 20.5 49.5t-20.49 49.41q-20.5 20.5-49.28 20.5-5.23 0-10.23-.5t-13-2.5L667-423q2 8 2.5 13t.5 10.23q0 28.78-20.59 49.28Q628.82-330 599.91-330t-49.41-20.49q-20.5-20.5-20.5-49.28 0-5.23.5-10.23t2.5-13L423-533q-8 2-13 2.5t-10.25.5q-1.75 0-22.75-3L177-333q2 8 2.5 13t.5 10.23q0 28.78-20.59 49.28Q138.82-240 109.91-240Z" />
+                    </svg>
+                    <div class="feature-title">Dynamic Time Flow</div>
+                    <p class="feature-desc">Watch time progress visually. A moving highlight shows today’s date, helping
+                        you see time as motion, not just numbers.
+                    </p>
+                </div>
+                <div class="feature">
+                    <span class="coming-soon">Coming Soon!</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" height="48px" viewBox="0 -960 960 960"
+                        width="48px" fill="#e3e3e3">
+                        <path
+                            d="M393-120q-63 0-106.5-43.5T243-270q0-63 43.5-106.5T393-420q28 0 50.5 8t39.5 22v-450h234v135H543v435q0 63-43.5 106.5T393-120Z" />
+                    </svg>
+                    <div class="feature-title">Audio-to-Visual Mapping</div>
+                    <div class="feature-desc">Turn sound into color and motion. Play music or notes and watch them
+                        transform into vibrant visual patterns.
+                    </div>
+                </div>
+                <div class="feature">
+                    <span class="coming-soon">Coming Soon!</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" height="48px" viewBox="0 -960 960 960"
+                        width="48px" fill="#e3e3e3">
+                        <path
+                            d="M450-154v-309L180-619v309l270 156Zm60 0 270-156v-310L510-463.16V-154Zm-30-360 266-155-266-154-267 154 267 155ZM150-258q-14.25-8.43-22.12-22.21Q120-294 120-310v-340q0-16 7.88-29.79Q135.75-693.57 150-702l300-173q14.33-8 30.16-8 15.84 0 29.84 8l300 173q14.25 8.43 22.13 22.21Q840-666 840-650v340q0 16-7.87 29.79Q824.25-266.43 810-258L510-85q-14.33 8-30.16 8Q464-77 450-85L150-258Zm330-222Z" />
+                    </svg>
+                    <div class="feature-title">3D Spatial Visualization</div>
+                    <div class="feature-desc">Step into a new dimension of time. Rotate, zoom, and explore your calendar
+                        in fully immersive 3D space.
+                    </div>
+                </div>
+                <div class="feature">
+                    <span class="coming-soon">Coming Soon!</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" height="48px" viewBox="0 -960 960 960"
+                        width="48px" fill="#e3e3e3">
+                        <path
+                            d="M840-683v503q0 24-18 42t-42 18H180q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h503l157 157Zm-60 27L656-780H180v600h600v-476ZM479.76-245q43.24 0 73.74-30.26 30.5-30.27 30.5-73.5 0-43.24-30.26-73.74-30.27-30.5-73.5-30.5-43.24 0-73.74 30.26-30.5 30.27-30.5 73.5 0 43.24 30.26 73.74 30.27 30.5 73.5 30.5ZM233-584h358v-143H233v143Zm-53-72v476-600 124Z" />
+                    </svg>
+                    <div class="feature-title">Save & Share Patterns</div>
+                    <div class="feature-desc">Keep your favorite layouts and share them with friends. Your synesthetic
+                        patterns, saved for later or shared with the world.
+                    </div>
+                </div>
+                <div class="feature">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" height="48px" viewBox="0 -960 960 960"
+                        width="48px" fill="#e3e3e3">
+                        <path
+                            d="M120-120v-168l377-377-72-72 41-41 92 92 142-142q5-5 11-8t12-3q6 0 12 3t12 8l81 81q5 6 8 12t3 12q0 6-3 12t-8 11L686-558l92 92-41 41-72-72-377 377H120Zm60-60h87l355-355-87-87-355 355v87Zm463-420 124-124-43-43-124 124 43 43Zm0 0-43-43 43 43Z" />
+                    </svg>
+                    <div class="feature-title">Custom Color Themes</div>
+                    <p class="feature-desc">Pick from preset palettes or design your own theme. Make your spatial
+                        calendar match your mood, vibe, or personality.</p>
+                </div>
+        </section>
+        <section id="faq">
+            <h1 class="section-title">FAQs</h1>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="question">
+                        <p>What is synesthesia?</p> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Synesthesia is when two or more senses blend together — like seeing colors when you hear
+                            music, or feeling time as shapes. Our app helps you visualize those patterns.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="question">
+                        <p>Do I need to have synesthesia to use this?</p> <svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Not at all! While it’s inspired by synesthetes, anyone can use it to explore time, numbers,
+                            and music in a more visual and creative way.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="question">
+                        <p>Is this scientific or just for fun?</p> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>A bit of both. The app is based on real synesthetic experiences, but it’s designed as a
+                            creative visualization tool, not a medical or diagnostic app.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="question">
+                        <p>Will my data or patterns be saved?</p> <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Your visualizations stay private unless you choose to save or share them. We don’t share your
+                            data without permission.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="question">
+                        <p>Can I share my creations with others?</p> <svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Yes! You’ll be able to save and share your visualizations (coming soon).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="question">
+                        <p>Do I need any special setup to use it?</p> <svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Nope — just a modern browser. No extra downloads or plugins required.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="updates-signup">
+            <h1 class="section-title">Stay Updated</h1>
+            <p class="section-desc">Recieve updates about newly added features before anyone</p>
+        </section> -->
+    </main>
+    <footer>
+        <div class="main">
+            <div class="logo-container">
+                <p class="logo">Synthetic.</p>
+            </div>
+            <div class="sign-up">
+                <p class="footer-title">Get updated!</p>
+                <input type="text" placeholder="johndoe@xyz.com">
+                <button class="btn btn-secondary">Sign Up</button>
+            </div>
+            <div class="navigation links">
+                <p class="footer-title">Navigation</p>
+                    <a href="#hero">Home</a>
+                    <a href="#demo">Demo</a>
+                    <a href="#features">Features</a>
+                    <a href="#faq">FAQs</a>
+                    <a href="/visualizer">Visualizer</a>
+            </div>
+            <div class="social links">
+                <p class="footer-title">Socials</p>
+                <a href="https://x.com/synthetic" target="_blank">Twitter</a>
+                <a href="https://youtube.com/synthetic" target="_blank">YouTube</a>
+                <a href="https://linkedin.com/synthetic" target="_blank">Linkedin</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><span class="ongoing-year"></span> Synthetic. All rights reserved.</p>
+        </div>
+    </footer>
+    <button class="theme-toggler"><i class="theme-toggle-icon fa fa-sun"></i></button>
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

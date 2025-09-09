@@ -1,0 +1,89 @@
+@media (max-width: 1024px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    #hero .right {
+        flex-basis: auto;
+    }
+
+    #hero .left .hero-buttons {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 960px) {
+    header {
+        width: 70%;
+    }
+
+    header .desktop-menu .btn,
+    .desktop-menu .links {
+        display: none;
+    }
+
+    header .desktop-menu .menu-toggle {
+        display: inline;
+    }
+
+    nav.open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .open .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .open .links a {
+        display: block;
+        margin: 10px 5px;
+    }
+
+    #hero .left .hero-title {
+        font-size: 3rem;
+    }
+
+    #demo .demo-container .section-title {
+        font-size: 3rem;
+    }
+
+    #faq .faq-item {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 450px) {
+    header {
+        width: 90%;
+    }
+
+
+    #demo .demo-container .row {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+    #demo .demo-container .right .steps {
+        min-height: 200px;
+        /* align-items: center; */
+    }
+
+    footer .main {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 50px;
+    }
+
+    footer .main .logo-container {
+        text-align: center;
+    }
+}
